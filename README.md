@@ -7,44 +7,83 @@ API
 ------------
 
 GET : /api/comments (GET ALL COMMENTS)
+
 GET : /api/comments/s (GET SINGLE COMMENT BY ID)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "Id": 2,
+
     }
+
 GET : /api/comments/p (GET COMMENTS FOR A POST)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "postId": 2,
+
     }
+
 GET : /api/comments/u (GET COMMENTS FOR A USER)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "userId": 2,
+
     }
+
 POST : /api/comments (CREATE NEW COMMENT)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "Id": 2,
+
         "postId": 2,
+
         "text": "hello",
+
         "createdAt": "2018-04-17",
+
         "userId": 3
+
     }
+
 PUT : /api/comments (UPDATE COMMENT)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "Id": 2,
+
         "postId": 2,
+
         "text": "hello",
+
         "createdAt": "2018-04-17",
+
         "userId": 3
+
     }
+
 DELETE : /api/comments (DELETE COMMENT)
+
     JSON STRUCTURE EXAMPLE:
+
     {
+
         "Id": 2,
+
     }
+
 
 Contributing
 ------------
